@@ -39,7 +39,7 @@ export default function Login() {
       toast.success("You logged in successfully");
       window.location.href = "/";
     } else {
-      toast.error(response?.error || "Login failed");
+      toast.error(response?.error || "Invalid email or password");
     }
   } catch (err) {
     toast.error("Something went wrong");
